@@ -94,13 +94,13 @@
                 </thead>
                 <tbody>
                 <#list workLogs as wl>
-                <tr>
+                    <tr>
 
                         <td>${wl.createdTime}</td>
                         <td>${wl.time}</td>
                         <td>${wl.description}</td>
 
-                </tr>
+                    </tr>
                 </#list>
                 </tbody>
             </table>
@@ -125,7 +125,7 @@
 
                     <div class="mb-3">
                         <p>Description</p>
-                        <input type="text" class="form-control" id="description" name="description"  required
+                        <input type="text" class="form-control" id="description" name="description" required
                                minlength="6">
                     </div>
 

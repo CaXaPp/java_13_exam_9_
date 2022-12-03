@@ -6,14 +6,14 @@
         <div>
             <table class="table">
                 <thead>
-                    <tr>
-                        <td>name</td>
-                        <td>status</td>
-                        <td>developer</td>
-                        <#if principal??>
-                            <td>view</td>
-                        </#if>
-                    </tr>
+                <tr>
+                    <td>name</td>
+                    <td>status</td>
+                    <td>developer</td>
+                    <#if principal??>
+                        <td>view</td>
+                    </#if>
+                </tr>
                 </thead>
                 <tbody>
                 <#list tasks as task>
@@ -22,7 +22,7 @@
                         <td>${task.status}</td>
                         <td>${task.developer}</td>
                         <#if principal??>
-                        <td><a href="/tasks/view?id=${task.id}">view</a></td>
+                            <td><a href="/tasks/view?id=${task.id}">view</a></td>
                         </#if>
                     </tr>
                 </#list>

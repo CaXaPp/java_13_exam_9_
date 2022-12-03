@@ -11,7 +11,8 @@
                 </li>
                 <#if principal?? && principal.role == "MANAGER">
                     <li class="nav-item">
-                        <a class="nav-link border border-light rounded" href="/users/create">Зарегистрировать пользователя</a>
+                        <a class="nav-link border border-light rounded" href="/users/create">Зарегистрировать
+                            пользователя</a>
                     </li>
                 </#if>
                 <#if principal?? && principal.role == "MANAGER">
@@ -30,11 +31,11 @@
                     </li>
                 </ul>
             <#else>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item me-2">
-                    <a class="btn btn-success" href="/login">Вход</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="btn btn-success" href="/login">Вход</a>
+                    </li>
+                </ul>
             </#if>
         </div>
     </div>
